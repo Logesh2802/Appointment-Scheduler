@@ -20,6 +20,10 @@ appointment-scheduler/
 - ✅ Book appointments with name and email
 - 📧 Receive email confirmation after successful booking
 - 🔐 Admin interface to manage availability
+- use route /admin/login to login the admin dashboard
+  email-admin@example.com
+  password - password123
+- Admin can manage and add the slots
 - 📱 Mobile-friendly, responsive UI (Bootstrap)
 - 🔄 Pagination in bookings list
 - ⚙️ RESTful API using Laravel
@@ -71,6 +75,7 @@ appointment-scheduler/
 5. **Run migrations**:
    ```bash
    php artisan migrate
+   php artisan db:seed
    ```
 
 6. **Start the Laravel server**:
@@ -142,19 +147,3 @@ This project was developed with the assistance of **ChatGPT**, used for:
 - **Laravel Mailables** to send clear booking confirmations
 - Booking logic ensures **slots can't be double-booked**
 - RESTful API endpoints for frontend integration
-
----
-
-## 🧪 Evaluation Focus (as per prompt)
-
-- ✅ Feature Completeness (slot selection, booking flow)
-- 🧠 Data Model Logic (foreign keys, booking constraints)
-- ✨ Code Quality (modular, readable, properly named)
-- 📦 Best Practices (React & Laravel standards)
-- 📲 UX & Responsiveness
-- 🧾 Documentation (this file + clean setup)
-- ⏱️ Time Management (focused on MVP first)
-
----
-
-Feel free to fork, clone, or contribute to this project!
